@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=YOUR_API_KEY"></script>
+  <script src="static/static/src/index.js"></script>
+  <script src="static/static/src/voice-recognition.js"></script>
+  <link rel="stylesheet" href="static/static/src/main.css">
+</head>
+
+<body>
+  <header>
+    <h1>Генерация и анализ голоса</h1>
+  </header>
+  <main>
+    <div class="imput-output-fields">
+      <textarea id="user-input">
+      </textarea>
+      <div id="input-settings">
+        <select id="lang-select">
+        </select>
+        <label for="pitch">Высота</label>
+        <input name="pitch" type="number" id="pitch" max="100" min="0">
+        <label for="rate">Скорость</label>
+        <input name="rate" type="number" id="rate" max="100" min="0">
+        <label for="volume">Громкость</label>
+        <input type="number" id="volume" max="100" min="0">
+      </div>
+      <button id="synt-button">
+        Воспроизвести
+      </button>
+    </div>
+    <div class="imput-output-fields" id="voice-recognition-view">
+      <p id="text-recogntion-output">
+      </p>
+      <ul>
+        Список команд:
+        <li>say [text] -произносит text выбранным голосом;</li>
+        <li>open music - открывает spotify в новой вкладке</li>
+        <li>open video - открывает youtube в новой вкладке</li>
+        <li>find [text] - ищет text в google</li>
+        <li>message [text] - выводит text в виде всплывающего текст</li>
+      </ul>
+      <select id="recognition-lang-selector">
+        <option value="en-Us">Английский</option>
+        <option value="ru-RU">Русский</option>
+        <option value="de-DE">Немецкий</option>
+      </select>
+      <button id="listen-button">
+        Слушать
+      </button>
+    </div>
+  </main>
+
+  <script src="static/static/src/index.js" async defer></script>
+</body>
+
+</html>

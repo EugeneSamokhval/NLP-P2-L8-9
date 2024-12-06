@@ -1,0 +1,70 @@
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+}
+
+textarea {
+  width: 800px;
+  height: 350px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+  width: 200px;
+}
+
+h1 {
+  align-content: center;
+  text-align: center;
+}
+
+
+.imput-output-fields {
+  width: 800px;
+  height: 900px;
+  align-items: center;
+  justify-content: center;
+}
+
+#lang-select {
+  height: 30px;
+  width: 150px;
+}
+
+#text-recogntion-output {
+  height: 800px;
+  height: 350px;
+  border: 1px solid black;
+  background-color: rgb(228, 228, 228);
+}
+
+#input-settings {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 35px;
+}
+
+#voice-recognition-view {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 382px 150px 50px 50px;
+  gap: 25px;
+}
+
+#recognition-lang-selector {
+  width: 200px;
+  height: 50px;
+}
